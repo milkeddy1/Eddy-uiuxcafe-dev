@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardB</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+
+
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .card {
+            border-radius: 10px;
+            margin: auto;
+            width: 30vw;
+            box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        .pic {
+            position: relative;
+        }
+
+        .heart {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+
+        .photo {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 30vw;
+        }
+
+        .info {
+            padding: 0 0.5rem 0.5rem 0.5rem;
+            border-bottom: 2px rgb(224, 224, 224) solid;
+        }
+
+        .info p {
+            padding: 0.5rem;
+        }
+
+        .info h1 {
+            padding: 0.5rem;
+        }
+
+        .info h3 {
+            padding: 0.5rem;
+        }
+
+
+        .icon {
+            width: 35px;
+        }
+
+        .facility {
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+            border-bottom: 2px rgb(224, 224, 224) solid;
+        }
+
+        .likes {
+            display: flex;
+        }
+
+        .likes p {
+            padding-left: 0.75rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .shares {
+            display: flex;
+        }
+
+        .shares p {
+            padding-left: 0.75rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .comments {
+            background-color: rgb(240, 245, 255);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .comment_title {
+            padding: 1rem 1rem 0 1rem;
+        }
+
+        .comment {
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .comment_detail {
+            height: 100%;
+            padding-left: 2rem;
+        }
+
+        .avatar {
+            border-radius: 50%;
+            width: 60px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="pic">
+                <img class="photo" src="https://picsum.photos/id/1015/300/200" alt="">
+                <div class="heart">
+                    <img class="icon" src="./heart.png" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <p>2022/2/18</p>
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <h3>Lorem, ipsum dolor.</h3>
+            </div>
+            <div class="facility">
+                <div class="likes">
+                    <img class="icon" src="./like.png" alt="">
+                    <p>5 Likes</p>
+                </div>
+                <div class="shares">
+                    <img class="icon" src="./share.png" alt="">
+                    <p>5 shares</p>
+                </div>
+            </div>
+            <div class="comments">
+                <div>
+                    <h3 class="comment_title">comments</h3>
+                </div>
+                <div class="comment">
+                    <div>
+                        <img class="avatar" src="https://i.pravatar.cc/300" alt="">
+                    </div>
+                    <div class="comment_detail">
+                        <h3>Name :</h4>
+                            <p>perfect pic!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
